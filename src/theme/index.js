@@ -24,8 +24,8 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 100%;
-  max-height: 100%;
+  min-height: 100%;
+  margin-top: 0;
   width: 100%;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;

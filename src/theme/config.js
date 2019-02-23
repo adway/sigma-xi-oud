@@ -4,13 +4,11 @@ export const basic = {
   black: '#1f2d3d',
 
   white: '#ffffff',
-  adway: '#a50104'
-  // info: '#0058e1'
+  adway: '#a50104',
+  info: '#0058e1'
 };
 
-basic.primary = basic.hackClub;
-
-basic.muted = basic.silver;
+basic.primary = basic.adway;
 
 export const colors = {
   ...basic
