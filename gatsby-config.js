@@ -15,6 +15,8 @@ module.exports = {
         theme: path.join(__dirname, 'src/theme'),
         data: path.join(__dirname, 'src/data.json')
       }
-    }
+    },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
   ]
 };
