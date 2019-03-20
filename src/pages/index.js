@@ -66,19 +66,17 @@ const Section = ({
   </Box>
 );
 
-const StyledButton = styled(Button).attrs({ mt: 3 })`
-  background: '#000';
-`;
-
 const disqusShortname = 'oud';
-
+const disqusConfig = {
+  url: 'https://oud.adway.io'
+};
 export default () => (
   <Layout>
     <Container px={[3, 4]} pt={4} mb={0}>
       <Heading.h1>
         Predicting Opioid Use Disorder Using Machine Learning
       </Heading.h1>
-      <Heading.h3 pt={4}>
+      <Heading.h3 pt={2}>
         Adway S. Wadekar - Saint John's High School
       </Heading.h3>
     </Container>
@@ -114,13 +112,16 @@ export default () => (
             target="_blank"
             href="https://www.dropbox.com/s/bj8yqtgnbh7t5wn/LabReport-v6.docx?dl=0"
           >
-            <StyledButton mt={3}>Read the Report</StyledButton>
+            <Button mt={3}>Read the Report</Button>
           </Link>
         </Text>
       </TextContainer>
     </Section>
     <Section lineColor="primary" title="Comments" mb={[3]}>
-      <Disqus.DiscussionEmbed shortname={disqusShortname} />
+      <Disqus.DiscussionEmbed
+        shortname={disqusShortname}
+        config={disqusConfig}
+      />
     </Section>
   </Layout>
 );

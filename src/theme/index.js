@@ -1,10 +1,13 @@
 import React from 'react';
-import { injectGlobal, ThemeProvider as Root } from 'styled-components';
+import {
+  createGlobalStyle as injectGlobal,
+  ThemeProvider as Root
+} from 'styled-components';
 import config from './config';
 
 export const theme = config;
 
-injectGlobal`
+export const GlobalStyle = injectGlobal`
 * {
   box-sizing: border-box;
   font-weight: inherit;
