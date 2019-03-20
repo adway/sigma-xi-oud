@@ -10,6 +10,7 @@ import {
 } from '@hackclub/design-system';
 import styled from 'styled-components';
 import { theme } from 'theme';
+import Disqus from 'disqus-react';
 
 const Title = styled(Heading).attrs({
   color: theme.colors.black,
@@ -69,6 +70,8 @@ const StyledButton = styled(Button).attrs({ mt: 3 })`
   background: '#000';
 `;
 
+const disqusShortname = 'oud';
+
 export default () => (
   <Layout>
     <Container px={[3, 4]} pt={4} mb={0}>
@@ -79,7 +82,7 @@ export default () => (
         Adway S. Wadekar - Saint John's High School
       </Heading.h3>
     </Container>
-    <Section lineColor="adway" title="Abstract" mb={[3]}>
+    <Section lineColor="primary" title="Abstract" mb={[3]}>
       <TextContainer>
         <Text fontSize={2} align="justify">
           Opioid Use Disorder (OUD), defined as physical or psychological
@@ -115,6 +118,9 @@ export default () => (
           </Link>
         </Text>
       </TextContainer>
+    </Section>
+    <Section lineColor="primary" title="Comments" mb={[3]}>
+      <Disqus.DiscussionEmbed shortname={disqusShortname} />
     </Section>
   </Layout>
 );

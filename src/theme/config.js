@@ -5,7 +5,8 @@ export const basic = {
 
   white: '#ffffff',
   adway: '#a50104',
-  info: '#0058e1'
+  info: '#0058e1',
+  ...config.colors
 };
 
 basic.primary = basic.adway;
