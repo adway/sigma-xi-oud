@@ -9,8 +9,6 @@ export const basic = {
   ...config.colors
 };
 
-basic.primary = basic.adway;
-
 export const colors = {
   ...basic
 };
